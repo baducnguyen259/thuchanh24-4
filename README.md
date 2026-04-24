@@ -1,6 +1,7 @@
 # 🎓 Student Manager — WordPress Plugin
 
 <div align="center">
+
 ### Ảnh 1: Menu CPT "Sinh viên" trong Admin
 
 ![Menu Sinh viên](/img/image.png)
