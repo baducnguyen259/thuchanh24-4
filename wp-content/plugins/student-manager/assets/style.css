@@ -1,0 +1,180 @@
+/**
+ * File: assets/style.css
+ * Stylesheet cho plugin Student Manager
+ */
+
+/* ============================================
+   WRAPPER & TIÊU ĐỀ
+   ============================================ */
+.sm-table-wrapper {
+    margin: 24px 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, sans-serif;
+}
+
+.sm-table-title {
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #1e3a5f;
+    border-left: 4px solid #2271b1;
+    padding-left: 12px;
+}
+
+.sm-table-count {
+    font-size: 0.9em;
+    color: #646970;
+    margin-bottom: 14px;
+}
+
+/* ============================================
+   RESPONSIVE WRAPPER
+   ============================================ */
+.sm-table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   TABLE
+   ============================================ */
+.sm-student-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95em;
+    min-width: 560px;
+}
+
+/* ============================================
+   THEAD / TFOOT
+   ============================================ */
+.sm-student-table thead tr {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2271b1 100%);
+    color: #ffffff;
+    text-align: left;
+}
+
+.sm-student-table tfoot tr {
+    background-color: #f0f4f8;
+    color: #3c4858;
+    font-weight: 600;
+    text-align: left;
+}
+
+.sm-student-table thead th,
+.sm-student-table tfoot th {
+    padding: 13px 16px;
+    font-size: 0.88em;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+}
+
+.sm-student-table thead th:first-child,
+.sm-student-table tfoot th:first-child {
+    border-radius: 8px 0 0 0;
+}
+
+.sm-student-table thead th:last-child,
+.sm-student-table tfoot th:last-child {
+    border-radius: 0 8px 0 0;
+}
+
+/* ============================================
+   TBODY
+   ============================================ */
+.sm-student-table tbody tr {
+    border-bottom: 1px solid #e2e8f0;
+    transition: background-color 0.15s ease;
+}
+
+.sm-student-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.sm-student-table tbody tr.sm-row-odd {
+    background-color: #ffffff;
+}
+
+.sm-student-table tbody tr.sm-row-even {
+    background-color: #f7fafc;
+}
+
+.sm-student-table tbody tr:hover {
+    background-color: #ebf4ff !important;
+    cursor: default;
+}
+
+.sm-student-table tbody td {
+    padding: 11px 16px;
+    color: #2d3748;
+    vertical-align: middle;
+}
+
+/* ============================================
+   CÁC CỘT CỤ THỂ
+   ============================================ */
+.sm-student-table .sm-col-stt {
+    width: 5%;
+    text-align: center;
+    font-weight: 600;
+    color: #718096;
+}
+
+.sm-student-table .sm-col-mssv {
+    width: 15%;
+    font-family: "Courier New", monospace;
+    font-weight: 700;
+    color: #2271b1;
+}
+
+.sm-student-table .sm-col-hoten {
+    width: 25%;
+    font-weight: 600;
+}
+
+.sm-student-table .sm-col-lop {
+    width: 35%;
+}
+
+.sm-student-table .sm-col-ngaysinh {
+    width: 20%;
+    white-space: nowrap;
+    color: #4a5568;
+}
+
+/* ============================================
+   THÔNG BÁO RỖNG
+   ============================================ */
+.sm-empty-notice {
+    background-color: #fff3cd;
+    border: 1px solid #ffc107;
+    border-left: 4px solid #ffc107;
+    border-radius: 6px;
+    padding: 14px 18px;
+    color: #664d03;
+    font-size: 0.95em;
+    margin: 16px 0;
+}
+
+.sm-empty-notice p {
+    margin: 0;
+}
+
+/* ============================================
+   RESPONSIVE – Màn hình nhỏ
+   ============================================ */
+@media screen and (max-width: 640px) {
+    .sm-table-title {
+        font-size: 1.1em;
+    }
+
+    .sm-student-table thead th,
+    .sm-student-table tfoot th,
+    .sm-student-table tbody td {
+        padding: 9px 10px;
+        font-size: 0.85em;
+    }
+}
